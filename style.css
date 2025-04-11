@@ -23,14 +23,11 @@ header {
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #4CAF50;
-    margin-bottom: 15px;
+    width: 150px; /* Set size of the image */
+    height: 150px; /* Set size of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensure the image doesn't stretch */
 }
-
 nav a {
     margin: 0 10px;
     text-decoration: none;
