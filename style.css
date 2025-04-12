@@ -5,14 +5,26 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+}
+
+/* Centered container for homepage */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
     padding: 20px;
 }
 
+/* Header styling */
 header {
     text-align: center;
     padding: 30px;
@@ -22,41 +34,58 @@ header {
     margin-bottom: 20px;
 }
 
+/* Profile picture styling */
 .profile-pic {
-    width: 150px; /* Set size of the image */
-    height: 150px; /* Set size of the image */
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensure the image doesn't stretch */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #4CAF50;
 }
+
+/* Navigation */
+nav {
+    margin-top: 10px;
+}
+
 nav a {
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
-    color: #4CAF50;
+    color: darkblue;
     font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
+    color: #4CAF50;
     text-decoration: underline;
 }
 
+/* Section styling for about, projects, skills, contact pages */
 section {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin: 40px auto;
+    max-width: 900px;
 }
 
-h2 {
-    margin-bottom: 10px;
+/* Headings */
+h1, h2 {
     color: #4CAF50;
+    margin-bottom: 10px;
 }
 
+/* Project list */
 ul {
     list-style-type: square;
     margin-left: 20px;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
